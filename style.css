@@ -12,6 +12,13 @@
 	--dark2: #050505;
 }
 
+body{
+  font-size: 18px;
+  font-family: 'inter', sans serif;
+  color: var(--secondary);
+
+}
+
 /* Estilos del menu  */
 .menu__navbar {
 	display: flex;
@@ -31,6 +38,10 @@
 	margin: 1.25rem;
 }
 
+.menu__item a:hover{
+  border-bottom: var(--primary)solid;
+}
+
 .menu__hero {
 	background-color: var(--dark2);
 	position: relative;
@@ -43,6 +54,9 @@
 	opacity: 0.38;
 }
 
+span{
+  color: var(--primary);
+}
 /* Estilos perfile header */
 
 .profile div {
@@ -98,7 +112,7 @@
 /* estilos  Perfile Header */
 
 .perfile__square-text{
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--secondary);
   top: 23.75rem;
   z-index: 11;
@@ -117,6 +131,10 @@ font-size: 1.3rem;
 
 }
 
+.perfile__square-text3:hover{
+  border-bottom: var(--primary)solid;
+}
+
 .perfile__square-text3 a{
   color: var(--secondary);
   text-decoration: none;
@@ -124,9 +142,13 @@ font-size: 1.3rem;
 .perfile__square-contactIcon{
 top: 28.125rem;
 z-index: 11;
-}
+} 
 
 .perfile__square-contactIcon img{
 width: 2.5rem;
 margin: 0 .625rem;
+}
+
+.perfile__square-contactIcon img:hover{
+  transform: scale(1.2);
 }

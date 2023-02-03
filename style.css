@@ -5,39 +5,88 @@
 }
 
 :root {
-    --primary:#18db86;
-    --secondary:white;
-    --secondary-light:rgb(173, 173, 173);
-    --dark1:#222222;
-    --dark2:#050505;
+	--primary: #18db86;
+	--secondary: white;
+	--secondary-light: rgb(173, 173, 173);
+	--dark1: #222222;
+	--dark2: #050505;
 }
 
 /* Estilos del menu  */
-.menu__navbar{
-  display: flex;
-  justify-content: flex-end;
+.menu__navbar {
+	display: flex;
+	justify-content: flex-end;
 }
 
-.menu__list{
-  display: flex;
-  list-style: none;
+.menu__list {
+	display: flex;
+	list-style: none;
 }
 
-.menu__item a{
-  font-size: 1.5rem;
-  padding: .625rem;
-  text-decoration: none;
-  color: white;
-  margin: 1.25rem;
+.menu__item a {
+	font-size: 1.5rem;
+	padding: 0.625rem;
+	text-decoration: none;
+	color: white;
+	margin: 1.25rem;
 }
 
-.menu__hero{
-  background-color: var(--dark2);
+.menu__hero {
+	background-color: var(--dark2);
+	position: relative;
 }
 
 /* imagen de portada*/
-.menu__hero img{
-  width: 100%;
-  height: 33.125rem;
-  opacity: 0.38;
+.menu__hero img {
+	width: 100%;
+	height: 33.125rem;
+	opacity: 0.38;
+}
+
+/* Estilos perfile header */
+
+.profile div {
+	position: absolute;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+}
+.profile__square {
+	width: 20rem;
+	height: 28.125rem;
+	background-color: var(--dark1);
+	opacity: 0.7;
+	z-index: 10;
+	top: 4.375rem;
+}
+.profile__circle-trans {
+	width: 18.125rem;
+	height: 18.125rem;
+	border-radius: 50%;
+	border: solid 1.875rem var(--primary);
+	opacity: 0.3;
+	z-index: 19;
+	top: 5.625rem;
+}
+.profile__circle-solido {
+	width: 14.375rem;
+	height: 14.375rem;
+	border-radius: 50%;
+	border: solid 0.9375rem var(--primary);
+
+	z-index: 21;
+	top: 7.5rem;
+}
+.profile__imagen {
+top: 8.375rem;
+z-index: 20;
+}
+
+.profile__img{
+  width: 12.625rem;
+  height: 12.625rem;
+  border-radius:50% ;
+  
 }

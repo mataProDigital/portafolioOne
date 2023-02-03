@@ -6,7 +6,7 @@
 
 :root {
 	--primary: #18db86;
-	--secondary: white;
+	--secondary: rgb(255, 255, 255);
 	--secondary-light: rgb(173, 173, 173);
 	--dark1: #222222;
 	--dark2: #050505;
@@ -50,8 +50,8 @@
 }
 
 .profile {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 .profile__square {
 	width: 20rem;
@@ -60,6 +60,7 @@
 	opacity: 0.7;
 	z-index: 10;
 	top: 4.375rem;
+  
 }
 .profile__circle-trans {
 	width: 18.125rem;
@@ -69,6 +70,10 @@
 	opacity: 0.3;
 	z-index: 19;
 	top: 5.625rem;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 }
 .profile__circle-solido {
 	width: 14.375rem;
@@ -80,13 +85,48 @@
 	top: 7.5rem;
 }
 .profile__imagen {
-top: 8.375rem;
-z-index: 20;
+	top: 8.375rem;
+	z-index: 20;
 }
 
-.profile__img{
-  width: 12.625rem;
-  height: 12.625rem;
-  border-radius:50% ;
-  
+.profile__img {
+	width: 12.625rem;
+	height: 12.625rem;
+	border-radius: 50%;
+}
+
+/* estilos  Perfile Header */
+
+.perfile__square-text{
+  font-size: 2rem;
+  color: var(--secondary);
+  top: 23.75rem;
+  z-index: 11;
+}
+.perfile__square-text2{
+font-size: 1.2rem;
+  color: var(--secondary);
+  top: 26.125rem;
+  z-index: 11;
+}
+.perfile__square-text3{
+font-size: 1.3rem;
+  color: var(--secondary);
+  top: 30.625rem;
+  z-index: 11;
+
+}
+
+.perfile__square-text3 a{
+  color: var(--secondary);
+  text-decoration: none;
+}
+.perfile__square-contactIcon{
+top: 28.125rem;
+z-index: 11;
+}
+
+.perfile__square-contactIcon img{
+width: 2.5rem;
+margin: 0 .625rem;
 }

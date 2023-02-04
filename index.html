@@ -4,15 +4,18 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Portafolio</title>
 		<link
 			rel="stylesheet"
 			href="style.css
   "
 		/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<!-- Creación del menu -->
@@ -33,9 +36,10 @@
 					alt=""
 				/>
 			</div>
+		</header>
 
-			<!---------------- Creación  Perfile Header --------------------->
-
+		<!---------------- Creación  Perfile Header --------------------->
+		<section>
 			<div class="profile">
 				<div class="profile__square"></div>
 				<div class="profile__circle-trans"></div>
@@ -50,9 +54,7 @@
 				<div class="perfile__square-text">Luis Ortiz Flores</div>
 				<div class="perfile__square-text2"><span>Desarrollador Web</span></div>
 				<div class="perfile__square-contactIcon">
-					<a href="#"
-						><img src="img/github.svg" alt="icono de red social"
-					/></a>
+					<a href="#"><img src="img/github.svg" alt="icono de red social" /></a>
 					<a href="#"
 						><img src="img/linkedin.svg" alt="icono de red social"
 					/></a>
@@ -60,8 +62,69 @@
 						><img src="img/message.svg" alt="icono de red social"
 					/></a>
 				</div>
-        <div class="perfile__square-text3"><a href="#about-me"><span>About me |</span> Sobre Mi</a></div>
+				<div class="perfile__square-text3">
+					<a href="#about-me"><span>About me |</span> Sobre Mi</a>
+				</div>
 			</div>
-		</header>
+		</section>
+
+		<!-- Area de portafolio -->
+		<div id="briefcase"></div>
+
+		<section class="briefcase">
+			<div class="briefcase__container">
+				<h2><span> | Portafolio | </span> </h2>
+				<div class="briefcase__grid">
+					<div>
+						<a data-modal-id="pw-portafolio"
+							><img
+								class="briefcase__grid briefcase__grid--trans"
+								src="./img/pagina-web-portafolio2022.png"
+								alt=""
+						/></a>
+					</div>
+					<div>
+						<a data-modal-id="pw-ropbodactav2"
+							><img
+								class="briefcase__grid briefcase__grid--trans"
+								src="./img/pagina-web-robodactav2.jpg"
+								alt=""
+						/></a>
+					</div>
+					<div>
+						<a data-modal-id="pw-dacorp"
+							><img
+								class="briefcase__grid briefcase__grid--trans"
+								src="./img/pagina-web-dacorp.png"
+								alt=""
+						/></a>
+					</div>
+					<div>
+						<a data-modal-id="pw-ionic"
+							><img
+								class="briefcase__grid briefcase__grid--trans"
+								src="./img/pagina-web-ionic.jpg"
+								alt=""
+						/></a>
+					</div>
+					<div>
+						<a data-modal-id="pw-repar"
+							><img
+								class="briefcase__grid briefcase__grid--trans"
+								src="./img/pagina-web-repar.jpg"
+								alt=""
+						/></a>
+					</div>
+					<div>
+						<a data-modal-id="pw-neuroPamama"
+							><img
+								class="briefcase__grid briefcase__grid--trans"
+								src="./img/pagina-web-neuroPanama.jpg"
+								alt=""
+						/></a>
+					</div>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>

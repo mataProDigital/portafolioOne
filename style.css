@@ -5,7 +5,7 @@
 }
 
 :root {
-	--primary: #18db86;
+	--primary: #03ffa1;
 	--secondary: rgb(255, 255, 255);
 	--secondary-light: rgb(173, 173, 173);
 	--dark1: #222222;
@@ -16,6 +16,11 @@ body {
 	font-size: 18px;
 	font-family: 'inter', sans serif;
 	color: var(--secondary);
+}
+
+.container{
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
 /* Estilos del menu  */
@@ -153,108 +158,132 @@ span {
 /* Portafolio */
 
 .briefcase {
-    background-color: var(--dark1);
+	background-color: var(--dark1);
 }
 
-.briefcase__container h2{
-    padding: 2.5rem;
-    text-align: center;
- 
+.briefcase__container h2 {
+	padding: 2.5rem;
+	text-align: center;
 }
 
-.briefcase__grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(18.125rem,auto));
-    gap:1.25rem;
-    width: 80%;
-    margin:0 auto;
-  
+.briefcase__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(18.125rem, auto));
+	gap: 1.25rem;
+	width: 80%;
+	margin: 0 auto;
 }
 
-.briefcase__grid--trans{
-    width: 100%;
-    border-radius: .625rem;
-    transition: transform 0.2s ease;
-    cursor: pointer;
+.briefcase__grid--trans {
+	width: 100%;
+	border-radius: 0.625rem;
+	transition: transform 0.2s ease;
+	cursor: pointer;
 }
 
 .briefcase__grid--trans:hover {
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
-
 
 /*skills*/
 
 section.skills {
-    background-color: var(--dark1);
+	background-color: var(--dark1);
 }
 
 .skill {
-    display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(15.625rem,auto));
-    justify-content: center;
-    gap:170px;
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 6.875rem;
-
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+	justify-content: center;
+	gap: 170px;
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 110px;
 }
 
 .skill h2 {
-    padding: 30px 30px 90px 30px;
-    font-size: 2.2rem;
+	padding: 50px 30px 90px 30px;
+	font-size: 2.2rem;
 }
 
 .skill img {
-    width:90px;
+	width: 90px;
 }
 .knowledge {
-   display: grid;
-   grid-template-columns:repeat(auto-fit,minmax(6.875rem,auto));
-   justify-content: center;
-   gap:25px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+	justify-content: center;
+	gap: 50px;
 }
 .tools {
-    display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(4.375rem,auto));
-    justify-content: center;
-    gap:3.125rem;
-
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+	justify-content: center;
+	gap: 50px;
 }
-
 
 /*tooltip*/
 
 .skill h3 {
-    background-color: var(--dark2);
-    text-align: center;
-    border-radius: .3125rem;
-    padding:5px 0;
-    font-size: 1.1rem;
-    color: var(--primary);
-    width:6.25rem;
-    opacity: 0;
-    transform: translate(0px,-6.25rem);
-    transition: transform 0.4s ease, opacity 0.4s ease;
-    -webkit-border-radius: .3125rem;
-    -moz-border-radius: .3125rem;
-    -ms-border-radius: .3125rem;
-    -o-border-radius: .3125rem;
-    -webkit-transform: translate(0px,-6.25rem);
-    -moz-transform: translate(0px,-6.25rem);
-    -ms-transform: translate(0px,-6.25rem);
-    -o-transform: translate(0px,-6.25rem);
-    -webkit-transition: transform 0.4s ease, opacity 0.4s ease;
-    -moz-transition: transform 0.4s ease, opacity 0.4s ease;
-    -ms-transition: transform 0.4s ease, opacity 0.4s ease;
-    -o-transition: transform 0.4s ease, opacity 0.4s ease;
+	background-color: var(--dark2);
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px 0;
+	font-size: 1.1rem;
+	color: var(--primary);
+	width: 100px;
+	opacity: 0;
+	transform: translate(0px, -100px);
+	transition: transform 0.4s ease, opacity 0.4s ease;
 }
-.knowledge>div:hover h3,
-.tools>div:hover h3 {
-    opacity: 1;
-    transform: translate(0px,-150px);
+.knowledge > div:hover h3,
+.tools > div:hover h3 {
+	opacity: 1;
+	transform: translate(0px, -150px);
 }
 
+/*about*/
 
+.about {
+	background-color: var(--dark2);
+}
 
+.about__flex {
+	display: flex;
+  width:90%;
+  margin: 0 auto;
+  padding: 3.125rem 0 12.5rem;
+}
 
+.about p {
+	font-size: 1.5rem;
+	width: 90%;
+	margin: 0 auto;
+	line-height: 2.3rem;
+  color: var(--secondary-light)
+}
+
+.social {
+  border-left: var(--secondary) .3125rem solid;
+  padding-left: 3.125rem;
+}
+
+.about_title{
+  padding: 3.125rem 0 0.5rem;
+  text-align: center;
+}
+
+.social img {
+  width:3.75rem;
+  margin: .625rem;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+}
+
+footer{
+  background-color: var(--dark2);
+  text-align: center;
+  color: var(--secondary-light)
+}

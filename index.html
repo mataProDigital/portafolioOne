@@ -1,237 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Portafolio</title>
-		<link
-			rel="stylesheet"
-			href="style.css
-  "
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
-	<body>
-		<!-- Creación del menu -->
-		<header class="menu">
-			<div class="menu__hero">
-        <div class="container">
-				<nav class="menu__navbar">
-					<ul class="menu__list">
-						<li class="menu__item menu__item--active">
-							<a href="#">Inicio</a>
-						</li>
-						<li class="menu__item"><a href="#">Portafolio</a></li>
-						<li class="menu__item"><a href="#">Sobre mi</a></li>
-					</ul>
-				</nav>
-				<img
-					class="menu__background-image"
-					src="img/fondo-desktop.jpg"
-					alt=""
-				/>
-			</div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MataProDigital</title>
+    <link rel="shortcut icon" href="img/logoMatapro-SinFondo.png.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="navbar container" >
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#briefcase">Portafolio</a></li>
+                <li><a href="#about-me">Sobre mi</a></li>
+            </ul>
+        </nav>
     </div>
-		</header>
 
-		<!---------------- Creación  Perfile Header --------------------->
-		<section>
-			<div class="profile">
-				<div class="profile__square"></div>
-				<div class="profile__circle-trans"></div>
-				<div class="profile__circle-solido"></div>
-				<div class="profile__imagen">
-					<img
-						class="profile__img"
-						src="img/peoplePerfileFondoBlanco.png"
-						alt="Foto de perfil"
-					/>
-				</div>
-				<div class="perfile__square-text">Luis Ortiz Flores</div>
-				<div class="perfile__square-text2"><span>Desarrollador Web</span></div>
-				<div class="perfile__square-contactIcon">
-					<a href="#"><img src="img/github.svg" alt="icono de red social" /></a>
-					<a href="#"
-						><img src="img/linkedin.svg" alt="icono de red social"
-					/></a>
-					<a href="#"
-						><img src="img/message.svg" alt="icono de red social"
-					/></a>
-				</div>
-				<div class="perfile__square-text3">
-					<a href="#about-me"><span>About me |</span> Sobre Mi</a>
-				
-			</div>
-		</section>
+</header>
 
-		<!-- Area de portafolio -->
-		<div id="briefcase"></div>
 
-		<section class="briefcase">
-			<div class="briefcase__container container">
-				<h2><span> | Portafolio | </span></h2>
-				<div class="briefcase__grid">
-					<div>
-						<a data-modal-id="pw-portafolio"
-							><img
-								class="briefcase__grid briefcase__grid--trans"
-								src="./img/pagina-web-portafolio2022.png"
-								alt=""
-						/></a>
-					</div>
-					<div>
-						<a data-modal-id="pw-ropbodactav2"
-							><img
-								class="briefcase__grid briefcase__grid--trans"
-								src="./img/pagina-web-robodactav2.jpg"
-								alt=""
-						/></a>
-					</div>
-					<div>
-						<a data-modal-id="pw-dacorp"
-							><img
-								class="briefcase__grid briefcase__grid--trans"
-								src="./img/pagina-web-dacorp.png"
-								alt=""
-						/></a>
-					</div>
-					<div>
-						<a data-modal-id="pw-ionic"
-							><img
-								class="briefcase__grid briefcase__grid--trans"
-								src="./img/pagina-web-ionic.jpg"
-								alt=""
-						/></a>
-					</div>
-					<div>
-						<a data-modal-id="pw-repar"
-							><img
-								class="briefcase__grid briefcase__grid--trans"
-								src="./img/pagina-web-repar.jpg"
-								alt=""
-						/></a>
-					</div>
-					<div>
-						<a data-modal-id="pw-neuroPamama"
-							><img
-								class="briefcase__grid briefcase__grid--trans"
-								src="./img/pagina-web-neuroPanama.jpg"
-								alt=""
-						/></a>
-					</div>
-				</div>
-			</div>
-		</section>
+<section>
+ <div class="hero" id="inicio">
+     <div class="container">  
+    <img src="./img/fondo-desktop.jpg" alt="">
+ </div>
+</div>
+ <div class="profile">
+    <div class="square"></div>
+    <div class="circle-trans"></div>
+    <div class="circle"></div>
+    <div class="profile-img"><img src="./img/logoMataPro1.png" alt=""></div>
+    <div class="square-text">Claudio Mata</div>
+    <div class="square-text-2"><span> WEB DEVELOPER</span></div>
+    <div class="contact-icon">
+        <a href="https://github.com/mataprodigital" target="_blank"><img src="./img/github.svg" alt=""></a>
+        <a href="https://www.linkedin.com"target="_blank"><img src="./img/linkedin.svg" alt=""></a>
+        <a data-modal-id="message"><img src="./img/message.svg" alt=""></a>
+    </div>
+    <div class="square-text-3"><a href="#about-me"><span>About me |</span> Sobre Mi</a></div>
+ </div>
+</section>
+<div id="briefcase"></div>
 
-		<section class="skills">
-			<div class="skill container">
-				<div class="knowledge-part">
-					<h2><span>Knowledge |</span> Conocimientos</h2>
-					<div class="knowledge">
-						<div>
-							<img src="./img/html-icon.png" alt="" />
-							<h3>HTML</h3>
-						</div>
-						<div>
-							<img src="./img/css-icon.png" alt="" />
-							<h3>CSS</h3>
-						</div>
-						<div>
-							<img src="./img/js-icon.png" alt="" />
-							<h3>Javascript</h3>
-						</div>
-						<div>
-							<img src="./img/woo-icon.png" alt="" />
-							<h3>Woo Commerce</h3>
-						</div>
-						<div>
-							<img src="./img/seo-icon.png" alt="" />
-							<h3>Optimización SEO</h3>
-						</div>
-						<div>
-							<img src="./img/wordpress-icon.png" alt="" />
-							<h3>Wordpress</h3>
-						</div>
-					</div>
-				</div>
+<section class="briefcase">
+    <div class="briefcase-section container">
+        <h2><span>Briefcase |</span> Portafolio</h2>
+        <div class="briefcase-grid">
+            <div><a data-modal-id="pw-portafolio"><img src="./img/pagina-web-portafolio2022.png" alt=""></a></div>
+            <div><a data-modal-id="pw-ropbodactav2"><img src="./img/pagina-web-robodactav2.jpg" alt=""></a></div>
+            <div><a data-modal-id="pw-dacorp"><img src="./img/pagina-web-dacorp.png" alt=""></a></div>
+            <div><a data-modal-id="pw-ionic"><img src="./img/pagina-web-ionic.jpg" alt=""></a></div>
+            <div><a data-modal-id="pw-repar"><img src="./img/pagina-web-repar.jpg" alt=""></a></div>
+            <div><a data-modal-id="pw-neuroPamama"><img src="./img/pagina-web-neuroPanama.jpg" alt=""></a></div>
 
-				<div class="tools-part">
-					<h2><span>Dev Tools |</span> Herramientas</h2>
-					<div class="tools">
-						<div>
-							<img src="./img/github-icon.png" alt="" />
-							<h3>GitHub</h3>
-						</div>
-						<div>
-							<img src="./img/vsc-icon.png" alt="" />
-							<h3>Visual Studio</h3>
-						</div>
-						<div>
-							<img src="./img/git-icon.png" alt="" />
-							<h3>GIT</h3>
-						</div>
-						<div>
-							<img src="./img/npm-icon.png" alt="" />
-							<h3>NPM</h3>
-						</div>
-						<div>
-							<img src="./img/webpack-icon.png" alt="" />
-							<h3>Webpack</h3>
-						</div>
-						<div>
-							<img src="./img/ga-icon.png" alt="" />
-							<h3>Analytics</h3>
-						</div>
-						<div>
-							<img src="./img/gsc-icon.png" alt="" />
-							<h3>Search Console</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="about">
-      <h2 class="about_title"><span>About |</span> Sobre nosotros</h2>
-			<div class="about__flex container">
+        </div>
+    </div>
+</section>
+
+<section class="skills">
+    <div class="skill container"> 
+        <div class="knowledge-part">
+            <h2><span>Knowledge |</span> Conocimientos</h2>
+            <div class="knowledge">
+                <div>
+                    <img src="./img/html-icon.png" alt="">
+                    <h3>HTML</h3>
+                </div>
+                <div>
+                    <img src="./img/css-icon.png" alt="">
+                    <h3>CSS</h3> 
+                </div>
+                <div><img src="./img/js-icon.png" alt="">
+                    <h3>Javascript</h3>
+                </div>
+                <div><img src="./img/woo-icon.png" alt="">
+                    <h3>Woo Commerce</h3>
+                </div>
+                <div><img src="./img/seo-icon.png" alt="">
+                    <h3>Optimización SEO</h3>
+                </div>
+                <div><img src="./img/wordpress-icon.png" alt="">
+                    <h3>Wordpress</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tools-part">
+            <h2><span>Dev Tools |</span> Herramientas</h2>
+            <div class="tools">
+                <div>
+                    <img src="./img/github-icon.png" alt="">
+                    <h3>GitHub</h3>
+                </div>
+                <div>
+                    <img src="./img/vsc-icon.png" alt="">
+                    <h3>Visual Studio</h3>
+                </div>
+                <div>
+                    <img src="./img/git-icon.png" alt="">
+                    <h3 >GIT</h3>
+                </div>
+               <div> 
+                   <img src="./img/npm-icon.png" alt="">
+                    <h3>NPM</h3>
+                </div>
+                <div>
+                    <img src="./img/webpack-icon.png" alt="">
+                    <h3>Webpack</h3>
+                </div>
+                <div>
+                    <img src="./img/ga-icon.png" alt="">
+                    <h3>Analytics</h3>
+                </div>
+                <div>
+                    <img src="./img/gsc-icon.png" alt="">
+                    <h3>Search Console</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about-me">
+    <div class="about-flex container">
+        <div class="about-info">
+            <p>Mi nombre es Rajesh Daya Oda, Soy Ingeniero en Robótica, Frontend Developer enfocado a aplicaciones y desarrollo web. Subo contenido relacionado a programación desde mi canal de Youtube en donde comparto mis conocimientos a la comunidad. Pienso que con algo he de aportar. Toco varios instrumentos, me gusta la música y soy amante del buen cine.</p>
+            <p><br>He trabajo en diferentes proyectos web con diversas tecnologías. Estuve desarrollando algunos proyectos de robótica con la plataforma de ARDUINO hace algún tiempo para una compañía y ahora me he enfocado más al Desarrollo de aplicaciones web. Me mantengo siempre actualizado ya que me gusta aprender cosas nuevas.</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/rajdayoda" target="_blank"><img src="./img/github.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/rajdayoda"target="_blank"><img src="./img/linkedin.svg" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCrBj22EAjbwih60lqZI-zDA/featured"target="_blank"><img src="./img/youtube.svg" alt=""></a>
+            <a data-modal-id="message"><img src="./img/message.svg" alt=""></a>
+        </div>
+    </div>
+    <div class="icon-elements">
+         <div>
+             <a href="https://www.youtube.com/watch?v=s-oY-1kRAcA" target="blank">
+            <img src="./img/youtube.icon.png" alt=""> 
+            <span>/ Ver el paso a paso de como se construyó este portafolio </span></a>
+        </div>
+        <div>
+            <a href="https://github.com/rajdayoda/portafolio2022" target="blank">
+           <img src="./img/github-icon.png" alt=""> 
+           <span>/ Ver código de este portafolio desde el repositorio</span></a>
+       </div>
+     
+    </div>
+</section>
+
+<footer>
+    <p>ⓒ 2020 Copyright | Designed by N/CODER</p>
+</footer>
+
+
+<!-- Modal section -->
+
+<!-- <div id="myModal" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+      <div class="eins-modal-close"></div>
+  
+      EJEMPLO DE PRUEBA
+      
+      <button class="eins-modal-close-button">OK</button>
+    </div>
+  </div> -->
+<!-- Modal section -->
+
+<div id="pw-portafolio" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+            <div class="pw-content">
+                <div class="eins-modal-preview">
+                    <img src="/img/2pagina-web-portafolio2022.png" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>Portafolio Web Personal, Construido con HTML, CSS Y JS. <br>Se usó librerias de npm y se optimizó la página con webpack. Se uso estructura SEO básica para la semántica en buscadores
+                    </p>
+                    <p> Se documentó el proceso paso a paso de como crear este portafolio desde cero, puedes ver el video desde el enlace del canal de youtube.
+                    </p>
+                    <p>También puedes acceder a él desde el repositorio de github</p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span><a href="/">https://rajdayoda.com</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="/img/html-icon.png" alt="">
+                            <img src="/img/css-icon.png" alt="">
+                            <img src="/img/js-icon.png" alt="">
+                            <img src="/img/npm-icon.png" alt="">
+                            <img src="/img/webpack-icon.png" alt="">
+                            <img src="/img/seo-icon.png" alt="">
+                            <div>
+                                <a href="https://www.youtube.com/watch?v=s-oY-1kRAcA" target="blank">
+                               <img src="./img/youtube.icon.png" alt=""> 
+                               <span>/ Ver el paso a paso de como se construyó este portafolio </span></a>
+                           </div>
+                           <div>
+                               <a href="https://github.com/rajdayoda/portafolio2022" target="blank">
+                              <img src="./img/github-icon.png" alt=""> 
+                              <span>/ Ver código de este portafolio desde el repositorio</span></a>
+                          </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="pw-ropbodactav2" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+            <div class="pw-content">
+                <div class="eins-modal-preview">
+                    <img src="/img/2pagina-web-robodacta.png" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>Robodacta Tienda de Robótica didática México. Actualización 2022 
+                    E-commerce de artículos de robótica para proyectos de ingeniería
+                    motores, sensores, tarjetas, kit de robótica y más.</p>
+                    <p>Actualmente se encuentra en desarrollo con funcionalidad de puntos 
+                        de recompensa, emails personalizados en los pedidos. Y se implementarán aplicaciones de 
+                        seguimiento para evaluar movimiento en ventas. Así como estructura SEO para 
+                        posicionamiento en buscadores.
+                    </p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span><a href="https://tienda.robodacta.mx"target="_blank">https://tienda.robodacta.mx</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="/img/wordpress-icon.png" alt="">
+                            <img src="/img/woo-icon.png" alt="">
+                            <img src="/img/css-icon.png" alt="">
+                            <img src="/img/seo-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pw-dacorp" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+            <div class="pw-content">
+                <div class="eins-modal-preview">
+                    <img src="/img/2pagina-web-dacorp.png" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p> Dacorp Group- Centro autorizado Panasonic.<br> Creación de página coorporativa.<br>Es una empresa que ofrece servicios de instalación, mantenimiento y venta de repuestos Panasonic.  </p>
+                    <p> Optimización con SEO e implementación de SEM para posicionamiento</p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span><a href="https://dacorp.net"target="_blank">https://dacorp.net</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="/img/html-icon.png" alt="">
+                            <img src="/img/css-icon.png" alt="">
+                            <img src="/img/js-icon.png" alt="">
+                            <img src="/img/seo-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pw-ionic" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+        <div class="pw-content">
+            <div class="eins-modal-close"></div>    
+            <div class="eins-modal-preview"><img src="/img/2pagina-web-ionic.png" alt="">
+            </div>
+            <div class="eins-modal-text">
+                <p> Página corporativa de Ionic Pro- Página de lanzamiento de producto Ionic Uv Purifier.  </p>
+                <p> Un purificador por UV (luz ultravioleta) que se coloca en los aires acondicionados y elimina virus y bacterias presentes en el ambiente</p>
+                <div class="eins-modal-text-2">
+                    <span>Enlace:</span> <a href="https://ionicpro.net"target="_blank">https://ionicpro.net</a>
+                </div>
+                <div class="eins-modal-text-3">
+                    <span>Tecnologías Utilizadas:</span> 
+                    <div class="eins-modal-tec">
+                        <img src="/img/html-icon.png" alt="">
+                        <img src="/img/css-icon.png" alt="">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div id="pw-repar" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+        <div class="pw-content">
+            <div class="eins-modal-close"></div>    
+            <div class="eins-modal-preview"><img src="/img/2pagina-web-repar.png" alt="">
+            </div>
+            <div class="eins-modal-text">
+                <p>Repar Ind. Sa, Página coorporativa para empresa panameña enfocada en reparaciónes y sistemas industriales.  </p>
+                <p> Tienen dos ramas importantes. Instalación de Energía Solar e Instalación, mantenimiento y reparación de  Tecles y montacargas.</p>
+                <div class="eins-modal-text-2">
+                    <span>Enlace:</span> <a href="https://reparind.com"target="_blank">https://reparind.com</a>
+                </div>
+                <div class="eins-modal-text-3">
+                    <span>Tecnologías Utilizadas:</span> 
+                    <div class="eins-modal-tec">
+                        <img src="/img/wordpress-icon.png" alt="">
+                        <img src="/img/css-icon.png" alt="">
         
-				<div class="about__info">
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-						fuga esse ipsum perspiciatis recusandae, inventore possimus deleniti
-						nesciunt eligendi tenetur corporis sed numquam culpa assumenda
-						sapiente temporibus quibusdam, architecto facilis. Lorem ipsum dolor
-						sit amet consectetur adipisicing elit. Totam in, eum quibusdam nihil
-						tempore vel culpa reiciendis nulla inventore voluptate nesciunt
-						repellat quaerat recusandae natus harum et minima? Dolore,
-						officiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-						Obcaecati fuga esse ipsum perspiciatis recusandae, inventore
-						possimus deleniti nesciunt eligendi tenetur corporis sed numquam
-						culpa assumenda sapiente temporibus quibusdam, architecto facilis.
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam in,
-						eum quibusdam nihil tempore vel culpa reiciendis nulla inventore
-						voluptate nesciunt repellat quaerat recusandae natus harum et
-						minima? Dolore, officiis.
-					</p>
-				</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div id="pw-neuroPamama" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+        <div class="pw-content"> 
+            <div class="eins-modal-close"></div>   
+            <div class="eins-modal-preview"><img src="/img/2pagina-web-neuroPanama.png" alt="">
+            </div>
+            <div class="eins-modal-text">
+                <p>NeuroPanama, página coorporativa de la empresa en colaboración con otro diseñador web.   </p>
+                <p>Clínica enfocada a la neuropsicología. Tratamientos, asesorias y orientación para mejorar el funcionamiento cognitivo de la persona. </p>
+                <div class="eins-modal-text-2">
+                    <span>Enlace:</span> <a href="https://clinicaneuropanama.com/"target="_blank">https://clinicaneuropanama.com</a>
+                </div>
+                <div class="eins-modal-text-3">
+                    <span>Tecnologías Utilizadas:</span> 
+                    <div class="eins-modal-tec">
+                        <img src="/img/wordpress-icon.png" alt="">
+                        <img src="/img/css-icon.png" alt="">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
 
-				<div class="social">
-					<a href="#"><img src="./img/github.svg" alt="" /></a>
-					<a href="#"><img src="./img/linkedin.svg" alt="" /></a>
-					<a href="#"><img src="./img/youtube.svg" alt="" /></a>
-					<a href="#"><img src="./img/message.svg" alt="" /></a>
-				</div>
-			</div>
-		</section>
-		<footer>
-      <div class="container">
-			<p>2023 Copyright | Designed by Matapro</p>
-      </div>
-		</footer>
-	</body>
+
+
+
+<div id="message" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <form  class="form"action="https://formspree.io/f/mwkyvalb"method="POST">
+            <label>Tu Correo Electrónico:
+            <input type="email" name="_replyto">
+            </label>
+
+            <label>Tu Mensaje:
+            <textarea name="message"></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+
+
+
+<script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
+
+</body>
+
 </html>

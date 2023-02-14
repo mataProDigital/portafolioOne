@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary:#18db86;
-    --secondary:white;
+    --primary:#00BBF9;
+    --secondary:#F21B3F;
     --secondary-light:rgb(173, 173, 173);
     --dark1:#222222;
     --dark2:#050505;
@@ -194,6 +194,12 @@ section.skills {
     width: 90%;
     margin: 0 auto;
     padding: 50px 0 100px; 
+}
+
+.about-info h2{
+    padding: 40px;
+    text-align: center;
+ 
 }
 
 .about p {
